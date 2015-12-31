@@ -22,6 +22,24 @@ namespace CountryCityManagementSystem.UI {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// conuntryNameTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText conuntryNameTextBox;
+        
+        /// <summary>
+        /// edit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea edit;
+        
+        /// <summary>
         /// countrySaveButton control.
         /// </summary>
         /// <remarks>
@@ -40,12 +58,30 @@ namespace CountryCityManagementSystem.UI {
         protected global::System.Web.UI.WebControls.Button countryCancleButton;
         
         /// <summary>
-        /// studentsGridView control.
+        /// messageLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView studentsGridView;
+        protected global::System.Web.UI.WebControls.Label messageLabel;
+        
+        /// <summary>
+        /// countrysGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView countrysGridView;
+        
+        /// <summary>
+        /// showArticle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl showArticle;
     }
 }

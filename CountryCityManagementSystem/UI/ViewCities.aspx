@@ -16,7 +16,7 @@
 		<form id="form1" runat="server">
 			<div class="row name">
 				<div class="form-group">
-                    <label for="name" class="col-sm-1 control-label"><asp:RadioButton ID="cityNameRadioButton" runat="server" />City Name </label>
+                    <label for="name" class="col-sm-2 control-label"><asp:RadioButton ID="cityNameRadioButton" runat="server" />City Name </label>
 					<div class="col-sm-3">
 					  <input type="text" class="form-control" id="cityNameTextBox" placeholder="Country Name"/>
 					</div>
@@ -24,7 +24,7 @@
 			 </div> 
             <div class="row name">
 				<div class="form-group">
-                    <label for="name" class="col-sm-1 control-label"><asp:RadioButton ID="RadioButton1" runat="server" />Country </label>
+                    <label for="name" class="col-sm-2 control-label"><asp:RadioButton ID="RadioButton1" runat="server" />Country </label>
 					<div class="col-sm-3">
                         <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
 					</div>

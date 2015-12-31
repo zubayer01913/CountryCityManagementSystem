@@ -4,3 +4,9 @@ E:\zubayer\CountryCityManagementSystem\CountryCityManagementSystem\bin\CountryCi
 E:\zubayer\CountryCityManagementSystem\CountryCityManagementSystem\obj\Debug\CountryCityManagementSystem.csprojResolveAssemblyReference.cache
 E:\zubayer\CountryCityManagementSystem\CountryCityManagementSystem\obj\Debug\CountryCityManagementSystem.dll
 E:\zubayer\CountryCityManagementSystem\CountryCityManagementSystem\obj\Debug\CountryCityManagementSystem.pdb
+C:\Users\Oasik\Documents\GitHub\CountryCityManagementSystem\CountryCityManagementSystem\bin\CountryCityManagementSystem.dll.config
+C:\Users\Oasik\Documents\GitHub\CountryCityManagementSystem\CountryCityManagementSystem\bin\CountryCityManagementSystem.dll
+C:\Users\Oasik\Documents\GitHub\CountryCityManagementSystem\CountryCityManagementSystem\bin\CountryCityManagementSystem.pdb
+C:\Users\Oasik\Documents\GitHub\CountryCityManagementSystem\CountryCityManagementSystem\obj\Debug\CountryCityManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\Oasik\Documents\GitHub\CountryCityManagementSystem\CountryCityManagementSystem\obj\Debug\CountryCityManagementSystem.dll
+C:\Users\Oasik\Documents\GitHub\CountryCityManagementSystem\CountryCityManagementSystem\obj\Debug\CountryCityManagementSystem.pdb

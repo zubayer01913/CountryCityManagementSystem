@@ -10,5 +10,15 @@ namespace CountryCityManagementSystem.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string About { get; set; }
+
+        public Country(string name, string about) : this()
+        {
+            Name = name;
+            About = about;
+        }
+        public Country()
+        {
+
+        }
     }
 }
