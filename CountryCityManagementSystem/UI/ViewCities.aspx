@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
 
- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>
 	<link rel="stylesheet" href="css/Style.css" type="text/css"/>
 </head>
@@ -32,9 +32,7 @@
                         <asp:Button ID="Button1" runat="server" Text="Search" />
 					</div>
 				</div>
-			 </div> 
-
-        
+			 </div>     
 
             
     <div class="row">
@@ -48,37 +46,37 @@
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="City Name">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountryName")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("city.CityName")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="About">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountryAbout")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("city.CityAbout")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="No. of city dwellers">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountryAbout")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("city.NoDwelers")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Location">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountryAbout")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("city.Location")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Weather">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountryAbout")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("city.Weather")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Country">
+                <asp:TemplateField HeaderText="Country Name">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountryAbout")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("counntry.CountryName")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="About Country">
+                <asp:TemplateField HeaderText="Country About">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountryAbout")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("counntry.CountryAbout")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>

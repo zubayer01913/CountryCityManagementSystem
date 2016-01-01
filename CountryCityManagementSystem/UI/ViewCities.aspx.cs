@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CountryCityManagementSystem.BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,10 @@ namespace CountryCityManagementSystem.UI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(!IsPostBack)
+            {
+                GetShowAllCityCountry();
+            }
         }
 
         protected void viewCitiesGridView_SelectedIndexChanged(object sender, EventArgs e)
@@ -28,6 +32,13 @@ namespace CountryCityManagementSystem.UI
         private void LoadGridView()
         {
             
+        }
+
+        CityCountryManager cityCountryManager = new CityCountryManager();
+        public void GetShowAllCityCountry()
+        {
+                viewCitiesGridView.DataSource = cityCountryManager.GetAllCityCountry();
+                viewCitiesGridView.DataBind();
         }
     }
 }

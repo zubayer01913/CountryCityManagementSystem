@@ -13,7 +13,7 @@ namespace CountryCityManagementSystem.BLL
 
         public string Save(City city)
         {
-            if (!cityGateway.IsNameExist(city.Name))
+            if (!cityGateway.IsNameExist(city.CityName))
             {
                 if (cityGateway.Save(city) >= 0)
                 {
@@ -26,7 +26,7 @@ namespace CountryCityManagementSystem.BLL
             }
             else
             {
-                return " Name alerady Exist!! Please use Unique Name";
+                return " CountryName alerady Exist!! Please use Unique CountryName";
             }
         }
 
@@ -34,5 +34,6 @@ namespace CountryCityManagementSystem.BLL
         {
             return cityGateway.GetAllCitys();
         }
+
     }
 }

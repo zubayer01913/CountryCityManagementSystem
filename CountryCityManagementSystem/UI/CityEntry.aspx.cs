@@ -51,7 +51,7 @@ namespace CountryCityManagementSystem.UI
         {
             List<Country> country = countryManager.GetAllCountrys();
             countryDropDownList.DataSource = country;
-            countryDropDownList.DataTextField = "Name";
+            countryDropDownList.DataTextField = "CountryName";
             countryDropDownList.DataValueField = "Id";
             countryDropDownList.DataBind();
         }

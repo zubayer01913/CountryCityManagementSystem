@@ -52,12 +52,12 @@
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Name">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("Name")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("CountryName")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="About">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("About")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("CountryAbout")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>

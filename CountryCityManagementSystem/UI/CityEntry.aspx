@@ -83,12 +83,12 @@
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Name">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("Name")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("CityName")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="About">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("About")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("CityAbout")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="No.of dwellers">

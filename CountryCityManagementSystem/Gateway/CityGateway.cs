@@ -27,9 +27,9 @@ namespace CountryCityManagementSystem.DAL.Gateway
 
             command.Parameters.Clear();
             command.Parameters.Add("name", SqlDbType.VarChar);
-            command.Parameters["name"].Value = city.Name;
+            command.Parameters["name"].Value = city.CityName;
             command.Parameters.Add("about", SqlDbType.VarChar);
-            command.Parameters["about"].Value = city.About;
+            command.Parameters["about"].Value = city.CityAbout;
             command.Parameters.Add("noDwelers", SqlDbType.VarChar);
             command.Parameters["noDwelers"].Value = city.NoDwelers;
             command.Parameters.Add("location", SqlDbType.VarChar);
@@ -45,6 +45,8 @@ namespace CountryCityManagementSystem.DAL.Gateway
 
             return rowAffected;
         }
+
+
         public List<City> GetAllCitys()
         {
             string query = "SELECT * FROM Citys";
@@ -59,10 +61,10 @@ namespace CountryCityManagementSystem.DAL.Gateway
             while (reader.Read())
             {
                 City acity = new City();
-                acity.Name = reader["Name"].ToString();
-                acity.About = reader["About"].ToString();
+                acity.CityName = reader["CityName"].ToString();
+                acity.CityAbout = reader["CityAbout"].ToString();
                 acity.NoDwelers = reader["NoDwelers"].ToString();
-                acity.Country = reader["Country"].ToString();
+                acity.Country = reader["CountryName"].ToString();
 
                 city.Add(acity);
 
@@ -74,11 +76,14 @@ namespace CountryCityManagementSystem.DAL.Gateway
             return city;
         }
 
+
+
+
         public bool IsNameExist(string name)
         {
             connection.ConnectionString = ConnectionString;
 
-            string query = "SELECT * FROM Countrys WHERE Name = '" + name + "'";
+            string query = "SELECT * FROM Countrys WHERE CountryName = '" + name + "'";
             SqlCommand command = new SqlCommand();
             command.CommandText = query;
             command.Connection = connection;
