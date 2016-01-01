@@ -11,9 +11,23 @@ namespace CountryCityManagementSystem.Models
         public string Name { get; set; }
         public string About { get; set; }
         public string NoDwelers { get; set; }
-        public string Locaction { get; set; }
-        public string Wether { get; set; }
-        public Country Country { get; set; }
+        public string Location { get; set; }
+        public string Weather { get; set; }
+        public string Country { get; set; }
+
+        public City(string name, string about, string noDwellers, string location, string weather, string country) : this()
+        {
+            Name = name;
+            About = about;
+            NoDwelers = noDwellers;
+            Location = location;
+            Weather = weather;
+            Country = country;
+        }
+        public City()
+        {
+
+        }
 
     }
 }

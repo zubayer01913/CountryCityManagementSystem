@@ -22,6 +22,51 @@ namespace CountryCityManagementSystem.UI {
         protected global::System.Web.UI.HtmlControls.HtmlForm form;
         
         /// <summary>
+        /// cityNameTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText cityNameTextBox;
+        
+        /// <summary>
+        /// edit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea edit;
+        
+        /// <summary>
+        /// noOfDwellerTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText noOfDwellerTextBox;
+        
+        /// <summary>
+        /// locationTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText locationTextBox;
+        
+        /// <summary>
+        /// weatherTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText weatherTextBox;
+        
+        /// <summary>
         /// countryDropDownList control.
         /// </summary>
         /// <remarks>
@@ -31,13 +76,13 @@ namespace CountryCityManagementSystem.UI {
         protected global::System.Web.UI.WebControls.DropDownList countryDropDownList;
         
         /// <summary>
-        /// countrySaveButton control.
+        /// citySaveButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button countrySaveButton;
+        protected global::System.Web.UI.WebControls.Button citySaveButton;
         
         /// <summary>
         /// countryCancleButton control.
@@ -49,12 +94,30 @@ namespace CountryCityManagementSystem.UI {
         protected global::System.Web.UI.WebControls.Button countryCancleButton;
         
         /// <summary>
-        /// studentsGridView control.
+        /// messageLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView studentsGridView;
+        protected global::System.Web.UI.WebControls.Label messageLabel;
+        
+        /// <summary>
+        /// citysGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView citysGridView;
+        
+        /// <summary>
+        /// showArticle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl showArticle;
     }
 }
