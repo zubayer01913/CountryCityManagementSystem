@@ -15,5 +15,15 @@ namespace CountryCityManagementSystem.BLL
         {
             return cityCounrtyGateway.GetAllCityCountry();
         }
+
+        public List<CityCountry> GetSearchCitys(string title)
+        {
+            return cityCounrtyGateway.GetSearchCitys(title);
+        }
+
+        public List<CityCountry> GetSearchCountrys(string title)
+        {
+            return cityCounrtyGateway.GetSearchCountrys(title);
+        }
     }
 }
