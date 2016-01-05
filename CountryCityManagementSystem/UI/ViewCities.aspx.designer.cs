@@ -31,31 +31,40 @@ namespace CountryCityManagementSystem.UI {
         protected global::System.Web.UI.WebControls.RadioButton cityNameRadioButton;
         
         /// <summary>
-        /// RadioButton1 control.
+        /// cityNameTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText cityNameTextBox;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// CountyNameRadioButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.RadioButton CountyNameRadioButton;
         
         /// <summary>
-        /// Button1 control.
+        /// CountryDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.DropDownList CountryDropDownList;
+        
+        /// <summary>
+        /// searchButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button searchButton;
         
         /// <summary>
         /// viewCitiesGridView control.

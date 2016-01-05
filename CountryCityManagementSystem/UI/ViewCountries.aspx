@@ -19,10 +19,10 @@
 				<div class="form-group">
 					<label for="name" class="col-sm-1 control-label">Name</label>
 					<div class="col-sm-3">
-					  <input type="text" class="form-control" id="conuntryName" placeholder="Country Name"/>
+					  <input type="text" class="form-control"  runat="server" id="conuntryNameTextBox" placeholder="Country Name"/>
 					</div>
                     <div class="col-sm-4">
-                        <asp:Button ID="countrySearchButton" runat="server" Text="Search" />
+                        <asp:Button ID="countrySearchButton" runat="server" Text="Search" OnClick="countrySearchButton_Click" />
 					</div>
 				</div>
 			 </div> 
@@ -31,7 +31,7 @@
 
             
     <div class="row">
-        <asp:GridView ID="studentsGridView" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical">
+        <asp:GridView ID="CountrysGridView" runat="server" AllowPaging="True" PageSize="3" OnPageIndexChanging="CountrysGridView_SelectedIndexChanged"  AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" >
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:TemplateField HeaderText="SL#">
@@ -41,22 +41,22 @@
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Name">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountryName")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("counntry.CountryName")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="About">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountryAbout")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("counntry.CountryAbout")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                   <asp:TemplateField HeaderText="No.of cities">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountryName")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("NoOfCity")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="No. of city dwellers">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CountryAbout")%>'></asp:Label>
+                        <asp:Label runat="server" Text='<%#Eval("NoOfDweller")%>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>

@@ -8,6 +8,9 @@
 
  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" />
+
 	<link rel="stylesheet" href="css/Style.css" type="text/css"/>
 </head>
 <body>
@@ -16,27 +19,32 @@
 		<form id="form1" runat="server">
 			<div class="row name">
 				<div class="form-group">
-                    <label for="name" class="col-sm-2 control-label"><asp:RadioButton ID="cityNameRadioButton" runat="server" />City Name </label>
+                    <label for="name" class="col-sm-2 control-label"><asp:RadioButton ID="cityNameRadioButton" Checked="true" AutoPostBack="True" GroupName="CitySearch"  runat="server" />City Name </label>
 					<div class="col-sm-3">
-					  <input type="text" class="form-control" id="cityNameTextBox" placeholder="Country Name"/>
+					  <input type="text" class="form-control" runat="server" ID="cityNameTextBox" placeholder="Country Name"/>
 					</div>
 				</div>
 			 </div> 
             <div class="row name">
 				<div class="form-group">
-                    <label for="name" class="col-sm-2 control-label"><asp:RadioButton ID="RadioButton1" runat="server" />Country </label>
+                    <label for="name" class="col-sm-2 control-label"><asp:RadioButton ID="CountyNameRadioButton"  AutoPostBack="True" GroupName="CitySearch" runat="server" />Country </label>
 					<div class="col-sm-3">
-                        <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="CountryDropDownList" runat="server" OnSelectedIndexChanged="CountryDropDownList_SelectedIndexChanged"></asp:DropDownList>
 					</div>
                     <div class="col-sm-4">
-                        <asp:Button ID="Button1" runat="server" Text="Search" />
+                        <asp:Button ID="searchButton" runat="server" Text="Search" OnClick="searchButton_Click" />
 					</div>
 				</div>
 			 </div>     
 
-            
+            <script>
+
+                $(document).ready(function () {
+                    $('#viewCitiesGridView').DataTable();
+                });
+            </script>
     <div class="row">
-        <asp:GridView ID="viewCitiesGridView" runat="server" AutoGenerateColumns="False" AllowPaging="True" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" OnPageIndexChanging="viewCitiesGridView_PageIndexChanging" OnSelectedIndexChanged="viewCitiesGridView_SelectedIndexChanged">
+        <asp:GridView ID="viewCitiesGridView" runat="server" AutoGenerateColumns="False" AllowPaging="True"  PageSize="3" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" OnPageIndexChanging="viewCitiesGridView_PageIndexChanging" >
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:TemplateField HeaderText="SL#">
@@ -94,9 +102,11 @@
 
 	   </form>
 	</div>  
-
+    
 
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
 </body>
 </html>

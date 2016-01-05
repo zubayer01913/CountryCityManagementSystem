@@ -21,7 +21,7 @@ namespace CountryCityManagementSystem.DAL.Gateway
         {
             connection.ConnectionString = ConnectionString;
 
-            string query = "INSERT INTO Citys VALUES(@name, @about, @noDwelers, @location, @weather, @country)";
+            string query = "INSERT INTO Citys VALUES(@name, @about, @noDwelers, @location, @weather, @country, @countryId)";
 
             SqlCommand command = new SqlCommand(query, connection);
 
@@ -30,26 +30,26 @@ namespace CountryCityManagementSystem.DAL.Gateway
             command.Parameters["name"].Value = city.CityName;
             command.Parameters.Add("about", SqlDbType.VarChar);
             command.Parameters["about"].Value = city.CityAbout;
-            command.Parameters.Add("noDwelers", SqlDbType.VarChar);
+            command.Parameters.Add("noDwelers", SqlDbType.Int);
             command.Parameters["noDwelers"].Value = city.NoDwelers;
             command.Parameters.Add("location", SqlDbType.VarChar);
             command.Parameters["location"].Value = city.Location;
             command.Parameters.Add("weather", SqlDbType.VarChar);
             command.Parameters["weather"].Value = city.Weather;
-            command.Parameters.Add("country", SqlDbType.VarChar);
-            command.Parameters["country"].Value = city.Country;
-
+            command.Parameters.Add("country", SqlDbType.VarChar);           
+            command.Parameters["country"].Value = city.Country;            
+            command.Parameters.Add("countryId", SqlDbType.Int);
+            command.Parameters["countryId"].Value = city.CountryId;
             connection.Open();
             int rowAffected = command.ExecuteNonQuery();
             connection.Close();
-
-            return rowAffected;
+            return rowAffected;           
         }
 
 
         public List<City> GetAllCitys()
         {
-            string query = "SELECT * FROM Citys";
+            string query = "SELECT * FROM Citys ORDER BY CityName";
             connection.ConnectionString = ConnectionString;
 
             SqlCommand command = new SqlCommand(query, connection);
@@ -63,7 +63,7 @@ namespace CountryCityManagementSystem.DAL.Gateway
                 City acity = new City();
                 acity.CityName = reader["CityName"].ToString();
                 acity.CityAbout = reader["CityAbout"].ToString();
-                acity.NoDwelers = reader["NoDwelers"].ToString();
+                acity.NoDwelers = Convert.ToInt32(reader["NoDwelers"]);
                 acity.Country = reader["CountryName"].ToString();
 
                 city.Add(acity);

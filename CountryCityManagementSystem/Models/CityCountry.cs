@@ -9,6 +9,9 @@ namespace CountryCityManagementSystem.Models
     {
         public City city { get; set; }
         public Country counntry { get; set; }
+        public int NoOfCity { get; set; }
+        public int NoOfDweller { get; set; }
+
         public CityCountry()
         {
             city = new City();

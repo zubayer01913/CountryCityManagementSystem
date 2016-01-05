@@ -22,6 +22,15 @@ namespace CountryCityManagementSystem.UI {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// conuntryNameTextBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText conuntryNameTextBox;
+        
+        /// <summary>
         /// countrySearchButton control.
         /// </summary>
         /// <remarks>
@@ -31,12 +40,12 @@ namespace CountryCityManagementSystem.UI {
         protected global::System.Web.UI.WebControls.Button countrySearchButton;
         
         /// <summary>
-        /// studentsGridView control.
+        /// CountrysGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView studentsGridView;
+        protected global::System.Web.UI.WebControls.GridView CountrysGridView;
     }
 }

@@ -34,12 +34,13 @@ namespace CountryCityManagementSystem.UI
         {
             string name = cityNameTextBox.Value;
             string about = edit.Value;
-            string noDwellers = noOfDwellerTextBox.Value;
+            int noDwellers = Convert.ToInt32 (noOfDwellerTextBox.Value);
             string loction = locationTextBox.Value;
             string weather = weatherTextBox.Value;
             string country = countryDropDownList.SelectedItem.Text;
+            int countryId = Convert.ToInt32(countryDropDownList.SelectedItem.Value);
 
-            City city = new City(name, about, noDwellers, loction, weather, country);
+            City city = new City(name, about, noDwellers, loction, weather, country, countryId);
 
 
             string message = cityManager.Save(city);
